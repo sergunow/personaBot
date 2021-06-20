@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     # Data, model, and output directories
     parser.add_argument("--output_dir", type=str, default=os.environ["SM_MODEL_DIR"])
-    parser.add_argument("--dataset", type=str, required=True)
+    parser.add_argument("--dataset", type=str, default='rick_subs.csv', required=True)
 
     input_args = parser.parse_args()
     global prefix
